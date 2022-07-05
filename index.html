@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link rel="stylesheet" href="style.css">
+    <title>Conditionals</title>
+</head>
+<body>
+    <h1 id="header">Hello</h1>
+    <input type="text" id="inp"/>
+    <button onclick="pressed()">Click</button>
+
+    <script>
+        function pressed(){
+            let text = document.getElementById("inp").value;
+            if (text === "red"){
+                document.getElementById("header").style.color = "red";
+            }else if(text === "green"){
+                document.getElementById("header").style.color = "green";
+            }
+            else{
+                document.getElementById("header").style.color = "orange";
+            }
+        }
+    </script>
+   
+   
+    <script src="main.js"></script>
+</body>
+</html>
